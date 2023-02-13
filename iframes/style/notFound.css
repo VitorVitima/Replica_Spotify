@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'padrão';
+    src: url('./Circular/CircularStd-Bold.otf');
+}
+*{
+    font-family: 'padrão';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main#pageFound{
+    background-color: #121212;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div#img > img{
+    width: 60px;
+    height: 60px;
+}
+main h1, p{
+    color: white;
+}
+main > div#texts{
+    width: fit-content;
+    height: 150px;
+
+    padding: 20px 0px 0px 0px;
+
+    text-align: center;
+}
+main > div#texts h1{
+    font-size: 45px;
+}
+main > div#texts > p{
+    margin: 20px 0px 0px 0px;
+    font-size: 14px;
+}
+main > div#buttons{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main > div#buttons > div:first-child{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main > div#buttons > div:first-child > a{
+    width: 75px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+    background-color: white;
+}
+main > div#buttons > div:first-child:hover > a{
+    width: 80px;
+    height: 45px;
+    font-size: 15px;
+
+    transition-duration: 0.1s;
+}
+main > div#buttons > div:last-child{
+    height: 35px;
+}
+main > div#buttons > div:last-child > a{
+    width: 70px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+main > div#buttons > div:last-child:hover > a{
+    text-decoration: underline;
+}

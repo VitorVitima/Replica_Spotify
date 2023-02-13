@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'media';
+    src: url('./iframes/style/Circular/CircularStd-Medium.otf');
+}
+:root{
+    --colorMain: #181818;
+    --colorHeader: #000000;
+
+    --font-media: 'media';
+}
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+body{
+    display: flex;
+}
+header{
+    background-color: var(--colorHeader);
+
+    width: 190px;
+    height: 100vh;   
+}
+header > nav {
+    padding: 150px 0px 0px 0px;
+}
+header > nav > ul {
+    list-style: none;
+}
+header > nav > ul > li > a{
+    width: fit-content;
+
+    font-family: 'media';
+    color: white;
+    text-decoration: none;  
+    display: flex;
+    gap: 10px;
+}
+header > nav > ul > li > a > span{
+    height: 100%;
+    margin: 7px 0px 0px 0px;
+}
+div#iframe > iframe{
+    width: calc(100vw - 190px);
+    height: calc(100vh - 90px);
+}
+
+main{
+    background-color: var(--colorMain);
+
+    width: 100vw;
+    height: 90px;
+
+    position: absolute;
+    top: 100vh;
+
+    transform: translate(0px,-100%);
+}
