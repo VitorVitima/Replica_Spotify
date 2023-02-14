@@ -22,11 +22,26 @@ header{
     width: 190px;
     height: 100vh;   
 }
-header > nav {
-    padding: 150px 0px 0px 0px;
+header > div#logo{
+    width: 94%;
+    height: 92px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header > div#logo > a > img{
+    width: 131px;
+    height: 39px;
 }
 header > nav > ul {
+    margin: 7px 0px 0px 0px;
+    padding: 0px 0px 0px 25px;
     list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 header > nav > ul > li > a{
     width: fit-content;
@@ -37,23 +52,25 @@ header > nav > ul > li > a{
     display: flex;
     gap: 10px;
 }
-header > nav > ul > li > a > span{
+header > nav > ul > li#home > a > span{
     height: 100%;
     margin: 7px 0px 0px 0px;
-}
-div#iframe > iframe{
-    width: calc(100vw - 190px);
-    height: calc(100vh - 90px);
+}header > nav > ul > li#pesquisa > a > span{
+    margin: 3px 0px 0px 0px;
 }
 
 main{
     background-color: var(--colorMain);
-
+    
     width: 100vw;
     height: 90px;
 
     position: absolute;
     top: 100vh;
-
+    
     transform: translate(0px,-100%);
+}
+div#iframeConteiner > iframe{
+    width: calc(100vw - 190px);
+    height: calc(100vh - 90px);
 }

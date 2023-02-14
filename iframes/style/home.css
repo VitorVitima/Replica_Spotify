@@ -2,6 +2,10 @@
     font-family: 'padrão';
     src: url('./Circular/CircularStd-Bold.otf');
 }
+@font-face {
+    font-family: 'padrão-bold';
+    src: url('Circular/CircularStd-Bold.otf');
+}
 *{  
     font-family: 'padrão';
     margin: 0px;
@@ -29,16 +33,98 @@ body, html {
     background-image: linear-gradient(180deg, #212121, #121212 12%);
     width: 98vw;
 }
+html {
+    margin: 0px 0px 0px 24px;
+    overflow-x: hidden;
+}
 html:hover > ::-webkit-scrollbar{
     display: block;
 }
 
 header{
-    
-    width: calc(100% - 6%);
-    height: 70px;
+    width: calc(100% + 24px);
+    height: 64.2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0px 42px;
+    margin: 0px 0px 0px -24px;
+    background-color: #000000;
+
+    position: sticky;
+    top: -1px;
+
+    z-index: 1;
 }
+header > div#arrows {
+    height: fit-content;
+
+    display: flex;
+    gap: 41px;
+}
+header > div#arrows > img{
+    height: 16px;
+}
+header > div#arrows > img:first-child{
+    rotate: 180deg;
+}
+header > div#ancoras {
+    display: flex;
+    gap: 18px;
+}
+header > div#ancoras > div#up{
+    border: 1px solid #808080;
+    border-radius: 20px;
+    padding: 6px 15px;
+}
+header > div#ancoras > div#up:hover{
+    padding: 0px 15px;
+    border: 1px solid white;
+}
+header > div#ancoras > div#up > a{
+    cursor: default;
+    font-size: 14px;
+    font-family: 'padrão-bold';
+    color: white;
+    text-decoration: none;
+}
+header > div#ancoras > div#user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header > div#ancoras > div#user > div#perfil{
+    background-color: #525252;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 27px;
+    height: 27px;
+}
+header > div#ancoras > div#user > div#perfil > img{
+    width: 15px;
+    height: fit-content;
+}
+header > div#ancoras > div#user > span{
+    color: white;
+    font-size: 14px;
+    font-family: 'padrão-bold';
+}
+header > div#ancoras > div#user > div#triangulo{
+    width: fit-content;
+    height: 15px;
+    color: white;
+}
+
+
 main {
+    margin: 0px 0px 0px -24px;
     display: flex;
     flex-direction: column;
     align-items: center;

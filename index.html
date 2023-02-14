@@ -9,18 +9,29 @@
 </head>
 <body>
     <header>
+        <div id="logo">
+            <a href="index.html"><img src="Spotify.png" alt="Spotify"></a>
+        </div>
         <nav>
             <ul>
-                <li>
-                    <a href="">
+                <li id="home">
+                    <a target="divIfra" href="iframes/home.html">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="25px" height="25px" fill-rule="nonzero"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(16,16)"><path d="M8,1l-7,5v9h5v-4c0,-1.105 0.895,-2 2,-2c1.105,0 2,0.895 2,2v4h5v-9z"></path></g></g></svg> <span>Home</span>
+                    </a>
+                </li>
+                <li id="pesquisa">
+                    <a target="divIfra" href="iframes/perquisa.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                        <span>Search</span>
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
-    <div id="iframe">
-        <iframe src="iframes/home.html" frameborder="0"></iframe>
+    <div id="iframeConteiner">
+        <iframe name="divIfra" src="iframes/home.html" frameborder="0"></iframe>
     </div>
     <main>
 
