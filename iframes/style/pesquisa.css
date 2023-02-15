@@ -2,13 +2,17 @@
     font-family: 'padrão-bold';
     src: url('Circular/CircularStd-Bold.otf');
 }
+@font-face {
+    font-family: 'padrão-book';
+    src: url('Circular/CircularStd-Book.otf');
+}
 :root{
     --w: 200px;
     --h: 200px;
 }
 body{
     margin: 0px;
-    background-color: #121212;
+    background-image: linear-gradient(180deg, #212121, #121212 12%);
 }
 html{
     overflow-x: hidden;
@@ -44,23 +48,56 @@ header{
     padding: 0px 42px;
     margin: 0px 0px 0px -24px;
     background-color: #000000;
-
+    
     position: sticky;
     top: -1px;
-
+    
     z-index: 1;
 }
-header > div#arrows {
-    height: fit-content;
+header > div#p1 {
+    height: 100%;
+    align-items: center;
+    gap: 25px;
+    display: flex;
+}
+header > div#p1 > div#arrows {
+    height: 100%;
 
     display: flex;
+    align-items: center;
     gap: 41px;
+
+    margin: 0px 0px 0px 25px;
 }
-header > div#arrows > img{
+header > div#p1 > div#arrows > img{
     height: 16px;
 }
-header > div#arrows > img:first-child{
+header > div#p1 > div#arrows > img:first-child{
     rotate: 180deg;
+}
+header > div#p1 > div#pesquisa{
+    box-sizing: content-box;
+
+    display: flex;
+    height: 40px;
+
+    background-color:white;
+    padding: 0px 0px 0px 10px;
+    border-radius: 20px;
+}
+header > div#p1 > div#pesquisa > div#lupa{
+    margin: 10px 10px 0px 5px;
+}
+header > div#p1 > div#pesquisa > input{
+    width: 314px;
+    height: 95%;
+    border-radius: 20px;
+    margin: 0px 0px 0px 0px 0px;
+    border: none;
+    outline: none;
+}
+header > div#p1 > div#pesquisa > input:active{
+    background-color: white;
 }
 header > div#ancoras {
     display: flex;
@@ -97,10 +134,9 @@ header > div#ancoras > div#user > div#triangulo{
     height: 15px;
     color: white;
 }
-
 main{
     width: 1100px;
-    margin: 0px 0px 0px 30px;
+    margin: 0px 0px 40px 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -114,6 +150,7 @@ main > span{
     font-family: 'padrão-bold';
     font-size: 24px;
     color: white;
+    margin: 45px 0px 0px 0px;
 }
 main > div#categorias > div{
     box-sizing: border-box;

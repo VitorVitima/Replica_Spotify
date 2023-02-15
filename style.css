@@ -58,6 +58,10 @@ header > nav > ul > li#home > a > span{
 }header > nav > ul > li#pesquisa > a > span{
     margin: 3px 0px 0px 0px;
 }
+header > nav > ul > li#library > a > span{
+    margin: 3px 0px 0px 0px;
+}
+
 
 main{
     background-color: var(--colorMain);
