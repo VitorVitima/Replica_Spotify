@@ -2,6 +2,14 @@
     font-family: 'media';
     src: url('./iframes/style/Circular/CircularStd-Medium.otf');
 }
+@font-face {
+    font-family: 'padrão-bold';
+    src: url('iframes/style/Circular/CircularStd-Bold.otf');
+}
+@font-face {
+    font-family: 'padrão-book';
+    src: url('iframes/style/Circular/CircularStd-Book.otf');
+}
 :root{
     --colorMain: #181818;
     --colorHeader: #000000;
@@ -61,7 +69,13 @@ header > nav > ul > li#home > a > span{
 header > nav > ul > li#library > a > span{
     margin: 3px 0px 0px 0px;
 }
-header > div#cq > div#square{
+header > div#cq{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 42px 0px 0px 24px;
+}
+header > div#cq > div#s > div#square{
     width: 24px;
     height: 24px;
     background-color: #b2b2b2;
@@ -71,24 +85,91 @@ header > div#cq > div#square{
     justify-content: center;
     align-items: center;
 }
-header > div#cq > div#square:hover{
+header > div#cq > div#s{
+    display: flex;
+}
+header > div#cq > div#s > div#square:hover{
     background-color: white;
 }
-header > div#cq > div#square > div > div{
+header > div#cq > div#s > div#square > div > div{
     width: 2px;
     height: 12px;
     background-color: #585858;
 }
-header > div#cq > div#square > div > div:first-child{
+header > div#cq > div#s > div#square > div > div:first-child{
     transform: translate(0px, 50%);
     
 }
-header > div#cq > div#square > div > div:last-child{
+header > div#cq > div#s > div#square > div > div:last-child{
     transform: translate(-300%, 0%);
     rotate: 90deg;
 }
+header > div#cq span{
+    font-family: 'padrão-bold';
+    font-size: 14px;
+    color: #b2b2b2;
 
+    margin: 5px 0px 0px 16px ;
+}
+header > div#cq > div#s:hover > span{
+    color: white;
+} 
+header > div#cq > div#cora{
+    display: flex;
+}
+header > div#cq > div#cora:hover > span{
+    color: white;
+}
 
+header > div#line{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header > div#line > div{
+    background-color: #282828;
+
+    width: 75%;
+    height: 1px;
+}
+header > div#ps {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    padding: 5px 0px 0px 25px;
+}
+header > div#ps > a{
+    text-decoration: none;
+}
+header > div#ps > a > span{
+    font-family: 'padrão-book';
+    font-size: 14px;
+    color: #a5a5a5;
+}
+header > div#ps > a > span:hover{
+    color: white;
+}
+header > div#install{
+    margin: 150px 0px 0px 25px;
+}
+header > div#install > a{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    text-decoration: none;
+    font-family: 'padrão-bold';
+    font-size: 14px;
+    color: white;
+}
+header > div#install > a > span{
+    margin: 5px 0px 0px 0px;
+}
 
 main{
     background-color: var(--colorMain);
