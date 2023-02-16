@@ -61,6 +61,33 @@ header > nav > ul > li#home > a > span{
 header > nav > ul > li#library > a > span{
     margin: 3px 0px 0px 0px;
 }
+header > div#cq > div#square{
+    width: 24px;
+    height: 24px;
+    background-color: #b2b2b2;
+    border-radius: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header > div#cq > div#square:hover{
+    background-color: white;
+}
+header > div#cq > div#square > div > div{
+    width: 2px;
+    height: 12px;
+    background-color: #585858;
+}
+header > div#cq > div#square > div > div:first-child{
+    transform: translate(0px, 50%);
+    
+}
+header > div#cq > div#square > div > div:last-child{
+    transform: translate(-300%, 0%);
+    rotate: 90deg;
+}
+
 
 
 main{
