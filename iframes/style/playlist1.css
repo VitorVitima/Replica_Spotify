@@ -114,7 +114,7 @@ main > div#topo {
     gap: 20px;
 }
 main > div#topo > div#dadosTopo{
-    padding: 60px 0px 0px 0px;
+    padding: 60px 0px 25px 0px;
 }
 main > div#topo > div#dadosTopo > span{
     font-family: 'padrão-bold';
@@ -147,4 +147,149 @@ main > div#topo > div#dadosTopo > div#nameAndDuration > ul > li{
 }
 main > div#topo > div#dadosTopo > div#nameAndDuration > ul > li > span#time{
     color: #C0AEA9;
+}
+
+main > div#musics{
+    background-image: linear-gradient(180deg, #320C03, #121212 40%);
+}
+main > div#musics > div#topoMusic {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    padding: 25px 33px;
+}
+main > div#musics > div#topoMusic > div#play{
+    box-sizing: border-box;
+    background-color: #1FDF64;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px 0px 0px 3px;
+}
+main > div#musics > div#topoMusic > div#play > img{
+    width: 17px;
+}
+main > div#musics > div#topoMusic > div#bolls {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 5px;
+} 
+main > div#musics > div#topoMusic > div#bolls > div{
+    background-color: #B3B3B3;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+}
+main > div#musics > div#topoMusic > div#bolls:hover > div{
+    background-color: white;
+}
+main > div#musics > div#dados{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    color: #B3B3B3;
+    font-family: 'padrão-book';
+    font-size: 12px;
+    padding: 0px 24px;
+}
+main > div#musics > div#dados > div#title > span:first-child{
+    font-size: 16px;
+    padding: 0px 10px 0px 20px;
+}
+main > div#musics > div#dados > div#album{
+    padding: 0px 0px 0px 406px;
+}
+main > div#musics > div#dados > div#date{
+    padding: 0px 0px 0px 237px;
+}
+main > div#musics > div#dados > div#clock{
+    padding: 0px 0px 0px 210px;
+}
+
+main > div#musics > div#line{
+    width: 100vw;
+    padding: 0px 0px 0px 30px ;
+}
+main > div#musics > div#line > div{
+    height: 1px;
+    width: calc(100% - 80px);
+    background-color: #352723;
+}
+
+main > div#musics > div#allMusics {
+    padding: 30px 30px;
+}
+main > div#musics > div#allMusics > div{
+    display: flex;
+    align-items: center;
+    
+    padding: 5px 0px 5px 20px;
+    border-radius: 5px;
+}
+main > div#musics > div#allMusics > div:hover{
+    background-color: #302927;
+}
+main > div#musics > div#allMusics > div > div.mImg{
+    width:  40px;
+    height: 40px;
+}
+main > div#musics > div#allMusics > div > div.mImg > img{
+    width: 40px;
+}
+main > div#musics > div#allMusics > div > span{
+    font-family: 'padrão-book';
+    font-size: 14px;
+    color: #B3B3B3;
+}
+main > div#musics > div#allMusics > div > span:first-child{
+    padding: 0px 25px 0px 0px;
+    font-size: 16px;
+}
+main > div#musics > div#allMusics > div > div.nameAndArtista{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 0px 17px;
+}
+main > div#musics > div#allMusics > div > div.nameAndArtista > span.name{
+    font-size: 16px;
+    color: white;
+}
+main > div#musics > div#allMusics > div > div.nameAndArtista > span.artista{
+    font-size: 14px;
+    color: #B3B3B3;
+}
+main > div#musics > div#allMusics > div > span.album{
+    padding: 0px 0px 0px 250px;
+}
+main > div#musics > div#allMusics > div#m3 > span.album{
+    padding: 0px 0px 0px 189px;
+}
+main > div#musics > div#allMusics > div#m4 > span.album{
+    padding: 0px 0px 0px 266px;
+}
+main > div#musics > div#allMusics > div > span.date{
+    padding: 0px 0px 0px 150px;
+}
+main > div#musics > div#allMusics > div#m2 > span.date{
+    padding: 0px 0px 0px 220px;
+}
+main > div#musics > div#allMusics > div#m3 > span.date{
+    padding: 0px 0px 0px 194px;
+}
+main > div#musics > div#allMusics > div#m4 > span.date{
+    padding: 0px 0px 0px 207px;
+}
+main > div#musics > div#allMusics > div > span.date::after{
+    content: ' ago';
+}
+main > div#musics > div#allMusics > div > span.time{
+    padding: 0px 0px 0px 210px ;
 }
