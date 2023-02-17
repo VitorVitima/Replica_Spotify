@@ -1,0 +1,374 @@
+@font-face {
+    font-family: 'padrão-black';
+    src: url('Circular/CircularStd-Black.otf');
+}
+@font-face {
+    font-family: 'padrão-bold';
+    src: url('Circular/CircularStd-Bold.otf');
+}
+@font-face {
+    font-family: 'padrão-book';
+    src: url('Circular/CircularStd-Book.otf');
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    background-image: linear-gradient(180deg, #212121, #121212 12%);
+    margin: 0px;
+}
+header{
+    box-sizing: content-box;
+    width: calc(100vw - 59px);
+    height: 64.2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0px 42px;
+    margin: 0px 0px 0px -24px;
+    background-color: #5188BF;
+    
+    position: sticky;
+    top: -1px;
+    
+    z-index: 1;
+}
+header > div#p1 {
+    height: 100%;
+    align-items: center;
+    gap: 25px;
+    display: flex;
+}
+header > div#p1 > div#arrows {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    margin: 0px 0px 0px 15px;
+}
+header > div#p1 > div#arrows > div{
+    box-sizing: border-box;
+    background-color: #240801;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+header > div#p1 > div#arrows > div:first-child{
+    padding: 7px 0px 0px 9px;
+}
+header > div#p1 > div#arrows > div:last-child{
+    padding: 7px 0px 0px 12px;
+}
+header > div#p1 > div#arrows > div > img{
+    height: 16px;
+}
+header > div#p1 > div#arrows > div:first-child > img{
+    rotate: 180deg;
+}
+header > div#ancoras {
+    display: flex;
+    gap: 18px;
+}
+header > div#ancoras > div#user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header > div#ancoras > div#user > div#perfil{
+    background-color: #525252;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 27px;
+    height: 27px;
+}
+header > div#ancoras > div#user > div#perfil > img{
+    width: 15px;
+    height: fit-content;
+}
+header > div#ancoras > div#user > span{
+    color: white;
+    font-size: 14px;
+    font-family: 'padrão-bold';
+}
+header > div#ancoras > div#user > div#triangulo{
+    width: fit-content;
+    height: 15px;
+    color: white;
+}
+
+
+main > div#topo {
+    background-image: linear-gradient( 180deg, #5188BF, #436F9B, #2A4561);
+    padding: 20px 0px 0px 32px;
+    
+    display: flex;
+    gap: 20px;
+}
+main > div#topo > div#dadosTopo{
+    padding: 60px 0px 25px 0px;
+}
+main > div#topo > div#dadosTopo > span{
+    font-family: 'padrão-bold';
+    font-size: 12px;
+    color: white;
+}
+main > div#topo > div#dadosTopo > h1 {
+    font-family: 'padrão-black';
+    font-size: 96px;
+    color: white;
+    margin: 0px 0px 20px 0px;
+}
+main > div#topo > div#dadosTopo > div#nameAndDuration{
+    display: flex;
+    gap: 20px;
+}
+main > div#topo > div#dadosTopo > div#nameAndDuration > span{
+    font-family: 'padrão-bold';
+    font-size: 14px;
+    color: white;
+}
+main > div#topo > div#dadosTopo > div#nameAndDuration > ul{
+    margin: 0px;
+    padding: 0px;
+}
+main > div#topo > div#dadosTopo > div#nameAndDuration > ul > li{
+    font-family: 'padrão-book';
+    font-size: 14px;
+    color: white;
+}
+main > div#topo > div#dadosTopo > div#nameAndDuration > ul > li > span#time{
+    color: #C0AEA9;
+}
+
+main > div#musics{
+    background-image: linear-gradient(180deg, #20364C, #121212 50%);
+}
+main > div#musics > div#topoMusic {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    padding: 25px 33px;
+}
+main > div#musics > div#topoMusic > div#play{
+    box-sizing: border-box;
+    background-color: #1FDF64;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px 0px 0px 3px;
+}
+main > div#musics > div#topoMusic > div#play > img{
+    width: 17px;
+}
+main > div#musics > div#topoMusic > div#bolls {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 5px;
+} 
+main > div#musics > div#topoMusic > div#bolls > div{
+    background-color: #B3B3B3;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+}
+main > div#musics > div#topoMusic > div#bolls:hover > div{
+    background-color: white;
+}
+main > div#musics > div#dados{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    color: #B3B3B3;
+    font-family: 'padrão-book';
+    font-size: 12px;
+    padding: 0px 24px;
+}
+main > div#musics > div#dados > div#title > span:first-child{
+    font-size: 16px;
+    padding: 0px 10px 0px 20px;
+}
+main > div#musics > div#dados > div#album{
+    padding: 0px 0px 0px 406px;
+}
+main > div#musics > div#dados > div#date{
+    padding: 0px 0px 0px 237px;
+}
+main > div#musics > div#dados > div#clock{
+    padding: 0px 0px 0px 200px;
+}
+
+main > div#musics > div#line{
+    width: 100vw;
+    padding: 0px 0px 0px 30px ;
+}
+main > div#musics > div#line > div{
+    height: 1px;
+    width: calc(100% - 80px);
+    background-color: #352723;
+}
+
+main > div#musics > div#allMusics {
+    padding: 30px 30px;
+}
+main > div#musics > div#allMusics > div{
+    display: flex;
+    align-items: center;
+    
+    padding: 5px 0px 5px 10px;
+    border-radius: 5px;
+}
+main > div#musics > div#allMusics > div:hover{
+    background-color: #302927;
+}
+main > div#musics > div#allMusics > div > div#num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+}
+main > div#musics > div#allMusics > div > div#num > span{
+    color: #B3B3B3;
+    font-size: 16px;
+    padding: 0px 10px 0px 0px;
+}
+main > div#musics > div#allMusics > div:hover > div#num{
+    display: none;
+}
+main > div#musics > div#allMusics > div > div.svg{
+    width: 31px;
+    color: #FDFDFD;
+    display: none;
+}
+main > div#musics > div#allMusics > div:hover > div.svg{
+    padding: 0px 0px 0px 13px;
+    display: flex;    
+}
+main > div#musics > div#allMusics > div > div.svg > svg{
+    rotate: 90deg;
+}
+main > div#musics > div#allMusics > div > div.mImg{
+    width:  40px;
+    height: 40px;
+}
+main > div#musics > div#allMusics > div > div.mImg > img{
+    width: 40px;
+}
+main > div#musics > div#allMusics > div > span{
+    font-family: 'padrão-book';
+    font-size: 14px;
+    color: #B3B3B3;
+}
+main > div#musics > div#allMusics > div > div.nameAndArtista{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 0px 17px;
+}
+main > div#musics > div#allMusics > div > div.nameAndArtista > span.name{
+    font-size: 16px;
+    color: white;
+}
+main > div#musics > div#allMusics > div > div.nameAndArtista > span.artista{
+    font-size: 14px;
+    color: #B3B3B3;
+}
+main > div#musics > div#allMusics > div > div.nameAndArtista > span.artista:hover{
+    text-decoration: underline;
+}
+main > div#musics > div#allMusics > div:hover > div.nameAndArtista > span.artista{
+    color: white;
+}
+main > div#musics > div#allMusics > div > span.album{
+    padding: 0px 0px 0px 250px;
+}
+main > div#musics > div#allMusics > div > span.album:hover{
+    text-decoration: underline;
+}
+main > div#musics > div#allMusics > div:hover > span.album{
+    color: white;
+}
+main > div#musics > div#allMusics > div#m1 > span.album{
+    padding: 0px 0px 0px 249px;
+}
+main > div#musics > div#allMusics > div#m2 > span.album{
+    padding: 0px 0px 0px 280px;
+}
+main > div#musics > div#allMusics > div#m3 > span.album{
+    padding: 0px 0px 0px 320px;
+}
+main > div#musics > div#allMusics > div#m4 > span.album{
+    padding: 0px 0px 0px 284px;
+}
+main > div#musics > div#allMusics > div > span.date{
+    padding: 0px 0px 0px 203px;
+}
+main > div#musics > div#allMusics > div#m2 > span.date{
+    padding: 0px 0px 0px 223px;
+}
+main > div#musics > div#allMusics > div#m3 > span.date{
+    padding: 0px 0px 0px 259px;
+}
+main > div#musics > div#allMusics > div#m4 > span.date{
+    padding: 0px 0px 0px 229px;
+}
+main > div#musics > div#allMusics > div > span.date::after{
+    content: ' ago';
+}
+main > div#musics > div#allMusics > div > div.cora{
+    height: 100%;
+    padding: 5px 50px 0px 161px;
+    color: #B3B3B3;
+}
+main > div#musics > div#allMusics > div > div.cora > svg{
+    display: none;
+}
+main > div#musics > div#allMusics > div:hover > div.cora{
+    padding: 5px 50px 0px 145px;
+}
+main > div#musics > div#allMusics > div:hover > div.cora > svg{
+    display: flex;
+}
+main > div#musics > div#allMusics > div > div.bolls2{
+    display: flex;
+    gap: 3px;
+    padding: 0px 0px 4px 15px;
+}
+main > div#musics > div#allMusics > div#m1 > div.bolls2{
+    padding: 0px 0px 4px 11px;
+}
+main > div#musics > div#allMusics > div#m2 > div.bolls2{
+    padding: 0px 0px 4px 13px;
+}
+main > div#musics > div#allMusics > div#m3 > div.bolls2{
+    padding: 0px 0px 4px 13px;
+}
+main > div#musics > div#allMusics > div#m4 > div.bolls2{
+    padding: 0px 0px 4px 13px;
+}
+main > div#musics > div#allMusics > div > div.bolls2 > div{
+    display: none;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: white;
+}
+main > div#musics > div#allMusics > div:hover > div.bolls2 > div{
+    display: inline;
+}

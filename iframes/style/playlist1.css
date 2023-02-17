@@ -150,7 +150,7 @@ main > div#topo > div#dadosTopo > div#nameAndDuration > ul > li > span#time{
 }
 
 main > div#musics{
-    background-image: linear-gradient(180deg, #320C03, #121212 40%);
+    background-image: linear-gradient(180deg, #320C03, #121212 50%);
 }
 main > div#musics > div#topoMusic {
     display: flex;
@@ -210,7 +210,7 @@ main > div#musics > div#dados > div#date{
     padding: 0px 0px 0px 237px;
 }
 main > div#musics > div#dados > div#clock{
-    padding: 0px 0px 0px 210px;
+    padding: 0px 0px 0px 200px;
 }
 
 main > div#musics > div#line{
@@ -230,29 +230,38 @@ main > div#musics > div#allMusics > div{
     display: flex;
     align-items: center;
     
-    padding: 5px 0px 5px 20px;
+    padding: 5px 0px 5px 10px;
     border-radius: 5px;
 }
 main > div#musics > div#allMusics > div:hover{
     background-color: #302927;
 }
-main > div#musics > div#allMusics > div > span:first-child{
-    padding: 0px 25px 0px 0px;
-    font-size: 16px;
+main > div#musics > div#allMusics > div > div#num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
 }
-main > div#musics > div#allMusics > div:hover > span:first-child{
+main > div#musics > div#allMusics > div > div#num > span{
+    color: #B3B3B3;
+    font-size: 16px;
+    padding: 0px 10px 0px 0px;
+}
+main > div#musics > div#allMusics > div:hover > div#num{
     display: none;
 }
 main > div#musics > div#allMusics > div > div.svg{
-    width: 34px;
+    width: 31px;
     color: #FDFDFD;
     display: none;
 }
+main > div#musics > div#allMusics > div:hover > div.svg{
+    padding: 0px 0px 0px 13px;
+    display: flex;    
+}
 main > div#musics > div#allMusics > div > div.svg > svg{
     rotate: 90deg;
-}
-main > div#musics > div#allMusics > div:hover > div.svg{
-    display: flex;    
 }
 main > div#musics > div#allMusics > div > div.mImg{
     width:  40px;
@@ -295,27 +304,68 @@ main > div#musics > div#allMusics > div > span.album:hover{
 main > div#musics > div#allMusics > div:hover > span.album{
     color: white;
 }
+main > div#musics > div#allMusics > div#m2 > span.album{
+    padding: 0px 0px 0px 252px;
+}
 main > div#musics > div#allMusics > div#m3 > span.album{
-    padding: 0px 0px 0px 189px;
+    padding: 0px 0px 0px 190px;
 }
 main > div#musics > div#allMusics > div#m4 > span.album{
-    padding: 0px 0px 0px 266px;
+    padding: 0px 0px 0px 267px;
 }
 main > div#musics > div#allMusics > div > span.date{
-    padding: 0px 0px 0px 150px;
+    padding: 0px 0px 0px 134px;
 }
 main > div#musics > div#allMusics > div#m2 > span.date{
-    padding: 0px 0px 0px 220px;
+    padding: 0px 0px 0px 205px;
 }
 main > div#musics > div#allMusics > div#m3 > span.date{
-    padding: 0px 0px 0px 194px;
+    padding: 0px 0px 0px 180px;
 }
 main > div#musics > div#allMusics > div#m4 > span.date{
-    padding: 0px 0px 0px 207px;
+    padding: 0px 0px 0px 193px;
 }
 main > div#musics > div#allMusics > div > span.date::after{
     content: ' ago';
 }
-main > div#musics > div#allMusics > div > span.time{
-    padding: 0px 0px 0px 210px ;
+main > div#musics > div#allMusics > div > div.cora{
+    height: 100%;
+    padding: 5px 50px 0px 161px;
+    color: #B3B3B3;
+}
+main > div#musics > div#allMusics > div > div.cora > svg{
+    display: none;
+}
+main > div#musics > div#allMusics > div:hover > div.cora{
+    padding: 5px 50px 0px 145px;
+}
+main > div#musics > div#allMusics > div:hover > div.cora > svg{
+    display: flex;
+}
+main > div#musics > div#allMusics > div > div.bolls2{
+    display: flex;
+    gap: 3px;
+    padding: 0px 0px 4px 15px;
+}
+main > div#musics > div#allMusics > div#m1 > div.bolls2{
+    padding: 0px 0px 4px 11px;
+}
+main > div#musics > div#allMusics > div#m2 > div.bolls2{
+    padding: 0px 0px 4px 13px;
+}
+main > div#musics > div#allMusics > div#m3 > div.bolls2{
+    padding: 0px 0px 4px 13px;
+}
+main > div#musics > div#allMusics > div#m4 > div.bolls2{
+    padding: 0px 0px 4px 13px;
+}
+main > div#musics > div#allMusics > div > div.bolls2 > div{
+    display: none;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: white;
+}
+main > div#musics > div#allMusics > div:hover > div.bolls2 > div{
+    display: inline;
 }
