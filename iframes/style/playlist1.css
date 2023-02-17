@@ -236,6 +236,24 @@ main > div#musics > div#allMusics > div{
 main > div#musics > div#allMusics > div:hover{
     background-color: #302927;
 }
+main > div#musics > div#allMusics > div > span:first-child{
+    padding: 0px 25px 0px 0px;
+    font-size: 16px;
+}
+main > div#musics > div#allMusics > div:hover > span:first-child{
+    display: none;
+}
+main > div#musics > div#allMusics > div > div.svg{
+    width: 34px;
+    color: #FDFDFD;
+    display: none;
+}
+main > div#musics > div#allMusics > div > div.svg > svg{
+    rotate: 90deg;
+}
+main > div#musics > div#allMusics > div:hover > div.svg{
+    display: flex;    
+}
 main > div#musics > div#allMusics > div > div.mImg{
     width:  40px;
     height: 40px;
@@ -247,10 +265,6 @@ main > div#musics > div#allMusics > div > span{
     font-family: 'padrão-book';
     font-size: 14px;
     color: #B3B3B3;
-}
-main > div#musics > div#allMusics > div > span:first-child{
-    padding: 0px 25px 0px 0px;
-    font-size: 16px;
 }
 main > div#musics > div#allMusics > div > div.nameAndArtista{
     display: flex;
@@ -266,8 +280,20 @@ main > div#musics > div#allMusics > div > div.nameAndArtista > span.artista{
     font-size: 14px;
     color: #B3B3B3;
 }
+main > div#musics > div#allMusics > div > div.nameAndArtista > span.artista:hover{
+    text-decoration: underline;
+}
+main > div#musics > div#allMusics > div:hover > div.nameAndArtista > span.artista{
+    color: white;
+}
 main > div#musics > div#allMusics > div > span.album{
     padding: 0px 0px 0px 250px;
+}
+main > div#musics > div#allMusics > div > span.album:hover{
+    text-decoration: underline;
+}
+main > div#musics > div#allMusics > div:hover > span.album{
+    color: white;
 }
 main > div#musics > div#allMusics > div#m3 > span.album{
     padding: 0px 0px 0px 189px;
