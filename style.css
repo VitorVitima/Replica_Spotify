@@ -186,3 +186,119 @@ div#iframeConteiner > iframe{
     width: calc(100vw - 190px);
     height: calc(100vh - 90px);
 }
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 17px 0px 17px;
+}
+main > div#dadosMusic {
+    display: flex;
+}
+main > div#dadosMusic > div#imgMusic > img{
+    width: 55px;
+}
+main > div#dadosMusic > div#dados{
+    margin: 0px 0px 0px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    font-family: 'padrão-book';
+}
+main > div#dadosMusic > div#dados > span:first-child{
+    color: white;
+    font-size: 14px;
+}
+main > div#dadosMusic > div#dados > span:last-child{
+    color: #a5a5a5;
+    font-size: 11px;
+}
+main > div#player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+main > div#player > div#audio{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+audio{
+    border: none;
+    width: 100px;
+    transform: translate(-31%, -21%);
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-panel{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 0px 30px;
+    background-color: white;
+}
+audio::-webkit-media-controls-play-button{
+    border-radius: 50%;
+    background-color: white;
+}
+audio::-webkit-media-controls-current-time-display{
+    display: none;
+}
+audio::-webkit-media-controls-time-remaining-display{
+    display: none;
+}
+audio::-webkit-media-controls-timeline{
+    display: none;
+}
+audio::-webkit-slider-thumb{
+    display: none;
+}
+audio::-webkit-media-controls-volume-slider{
+    display: none;
+}
+audio::-webkit-media-controls-mute-button{
+    display: none;
+}
+main > div#player > div#inputTag{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+main > div#player > div#inputTag > span{
+    font-family: 'padrão-book';
+    font-size: 12px;
+    color: #a5a5a5;
+}
+main > div#player > div#inputTag > div#conteiner{
+    width: 435px;
+    height: 4px;
+    border-radius: 20px;
+
+    background-color: #585858;
+    cursor: pointer;
+
+}
+main > div#player > div#inputTag > div#conteiner > div#conteiner2{
+    width: 45%;
+    height: 4px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+main > div#player > div#inputTag div#conteiner:hover > div#conteiner2 {
+    background-color: #1fdf64;
+}
+main > div#player > div#inputTag > div#conteiner > div#conteiner2 > div#boll{
+    display: none;
+    width: 13px;
+    height: 13px;
+
+    background-color: white;
+    border-radius: 50%;
+}
+main > div#player > div#inputTag > div#conteiner:hover > div#conteiner2 > div#boll{
+    display: block;
+}
