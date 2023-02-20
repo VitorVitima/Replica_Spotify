@@ -155,7 +155,7 @@ header > div#ps > a > span:hover{
     color: white;
 }
 header > div#install{
-    margin: 150px 0px 0px 25px;
+    margin: calc(100vh - 90px - 430px) 0px 0px 25px;
 }
 header > div#install > a{
     display: flex;
@@ -181,16 +181,15 @@ main{
     top: 100vh;
     
     transform: translate(0px,-100%);
+
+    display: flex;
+      justify-content: space-between;
+    align-items: center;
+    padding: 0px 17px 0px 17px;
 }
 div#iframeConteiner > iframe{
     width: calc(100vw - 190px);
     height: calc(100vh - 90px);
-}
-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4px 17px 0px 17px;
 }
 main > div#dadosMusic {
     display: flex;
@@ -214,18 +213,39 @@ main > div#dadosMusic > div#dados > span:last-child{
     color: #a5a5a5;
     font-size: 11px;
 }
+main > div#dadosMusic > div#iconsMusic{
+    color: #a5a5a5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 0px 0px 0px 25px;
+}
+main > div#dadosMusic > div#iconsMusic:hover{
+    color: white;
+}
 main > div#player{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
-main > div#player > div#audio{
+main > div#player > div#controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+main > div#player > div#controls > div#dados1, div#dados2{
+    display: flex;
+    gap: 20px;
+}
+main > div#player > div#controls > div#audio{
     width: 30px;
     height: 30px;
     overflow: hidden;
     border-radius: 50%;
 }
+
 audio{
     border: none;
     width: 100px;
@@ -301,4 +321,43 @@ main > div#player > div#inputTag > div#conteiner > div#conteiner2 > div#boll{
 }
 main > div#player > div#inputTag > div#conteiner:hover > div#conteiner2 > div#boll{
     display: block;
+}
+main > div#res {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+main > div#res > div{
+    display: flex;
+    align-items: center;
+}
+main > div#res > div#audioRes{
+    gap: 10px;
+}
+main > div#res > div#audioRes > div{
+    background-color: white;
+    height: 4px;
+    width: 80px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+main > div#res > div#audioRes > div > div{
+    height: 4px;
+    width: 100%;
+    background-color: #1fdf64;
+    border-radius: 20px;
+    display: none;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+main > div#res > div#audioRes:hover > div > div{
+    display: flex;
+}
+main > div#res > div#audioRes > div > div > div{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
 }

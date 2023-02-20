@@ -61,7 +61,7 @@ header > div#ancoras > div#up{
     padding: 6px 15px;
 }
 header > div#ancoras > div#up:hover{
-    padding: 0px 15px;
+    padding: 6px 15px;
     border: 1px solid white;
 }
 header > div#ancoras > div#up > a{
@@ -114,7 +114,7 @@ main {
 }
 main > div#recente{
     margin: 0px 0px 20px 0%;
-    width: calc(100% - 7%);
+    width: 1100px;
     display: flex;
     flex-direction: column;
 }
